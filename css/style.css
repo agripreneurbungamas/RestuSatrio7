@@ -1,0 +1,1497 @@
+/* =====================================================
+   BUDIDAYA BUNGA MAS
+   COMPANY PROFILE WEBSITE
+   STYLE.CSS - PART 2A (FINAL)
+===================================================== */
+
+/* ===============================
+   GOOGLE FONT
+================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===============================
+   RESET
+================================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8f9fa;
+    color:#333;
+    line-height:1.7;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+/* ===============================
+   CONTAINER
+================================ */
+
+.container{
+    max-width:1200px;
+}
+
+/* ===============================
+   SECTION
+================================ */
+
+section{
+    padding:90px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h5{
+    color:#198754;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-weight:700;
+}
+
+.section-title h2{
+    font-size:42px;
+    font-weight:700;
+    color:#222;
+    position:relative;
+    display:inline-block;
+    margin-top:10px;
+}
+
+.section-title h2::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:80px;
+
+    height:4px;
+
+    background:#ffc107;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    bottom:-12px;
+
+    border-radius:30px;
+
+}
+
+.section-title p{
+
+    margin-top:30px;
+
+    color:#666;
+
+    max-width:760px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+/* ===============================
+   NAVBAR
+================================ */
+
+/* ===============================
+   NAVBAR
+================================ */
+
+.navbar{
+    padding:15px 0;
+    background:rgba(0,0,0,.75);
+    backdrop-filter:blur(8px);
+}
+
+.navbar-brand{
+    font-size:28px;
+    font-weight:700;
+    color:#fff !important;
+}
+
+.nav-link{
+    color:#fff !important;
+    margin-left:18px;
+    font-weight:500;
+}
+
+.nav-link:hover{
+    color:#ffc107 !important;
+}
+
+/* Tombol Hamburger */
+.navbar-toggler{
+    border:1px solid rgba(255,255,255,.5);
+    padding:6px 10px;
+}
+
+.navbar-toggler:focus{
+    box-shadow:none;
+}
+
+/* Mobile */
+@media (max-width:991px){
+
+    .navbar-collapse{
+        background:#198754;
+        margin-top:15px;
+        border-radius:12px;
+        padding:15px;
+    }
+
+    .navbar-nav{
+        text-align:left;
+    }
+
+    .nav-link{
+        margin:8px 0;
+        padding:10px;
+    }
+}
+
+/* ===============================
+   HERO
+================================ */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,.60),
+    rgba(0,0,0,.60)),
+    url("../images/banner.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    color:white;
+
+}
+
+.hero h1{
+
+    font-size:clamp(2.5rem,6vw,4.8rem);
+
+    font-weight:800;
+
+    line-height:1.2;
+
+}
+
+.hero p{
+
+    margin-top:25px;
+
+    margin-bottom:35px;
+
+    color:#eeeeee;
+
+    font-size:clamp(1rem,2vw,1.2rem);
+
+}
+
+.hero img{
+
+    animation:floatImage 4s ease-in-out infinite;
+
+}
+
+@keyframes floatImage{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ===============================
+   BUTTON
+================================ */
+
+.btn{
+
+    padding:14px 35px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-warning{
+
+    color:#222;
+
+}
+
+.btn-warning:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 30px rgba(255,193,7,.35);
+
+}
+
+.btn-success:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 30px rgba(25,135,84,.35);
+
+}
+
+/* ===============================
+   CARD
+================================ */
+
+.card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border:none;
+
+    border-radius:20px;
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+
+}
+
+.card-body{
+
+    padding:35px;
+
+}
+
+/* ===============================
+   IMAGE
+================================ */
+
+.rounded{
+
+    border-radius:20px!important;
+
+}
+
+.shadow{
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15)!important;
+
+}
+
+/* ===============================
+   UTILITIES
+================================ */
+
+.text-success{
+
+    color:#198754!important;
+
+}
+
+.bg-light{
+
+    background:#f5f8f7!important;
+
+}
+
+.bg-success{
+
+    background:linear-gradient(
+    135deg,
+    #198754,
+    #2e7d32
+    )!important;
+
+    color:white;
+
+}
+
+.lead{
+
+    font-size:20px;
+
+}/* =====================================================
+   STYLE.CSS - PART 2B (FINAL)
+   TENTANG - KEUNGGULAN - ASAL - MANFAAT - STATISTIK
+=====================================================*/
+
+/* ===============================
+   TENTANG KAMI
+================================ */
+
+#tentang{
+    background:#ffffff;
+}
+
+#tentang img{
+    border-radius:20px;
+    transition:.4s;
+}
+
+#tentang img:hover{
+    transform:scale(1.03);
+}
+
+#tentang h2{
+    color:#1b5e20;
+    font-weight:700;
+}
+
+#tentang p{
+    text-align:justify;
+    color:#555;
+    font-size:17px;
+    line-height:1.9;
+}
+
+/* ===============================
+   KEUNGGULAN
+================================ */
+
+#keunggulan{
+    background:#f8faf9;
+}
+
+#keunggulan .card{
+
+    text-align:center;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+#keunggulan .card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:#198754;
+
+}
+
+#keunggulan i{
+
+    font-size:60px;
+
+    color:#198754;
+
+    transition:.4s;
+
+}
+
+#keunggulan .card:hover i{
+
+    transform:scale(1.15);
+
+    color:#ffc107;
+
+}
+
+#keunggulan h4{
+
+    margin-top:20px;
+
+    font-weight:700;
+
+}
+
+#keunggulan p{
+
+    color:#666;
+
+}
+
+/* ===============================
+   ASAL USUL
+================================ */
+
+#asal{
+
+    background:#fff;
+
+}
+
+#asal img{
+
+    border-radius:20px;
+
+    transition:.4s;
+
+}
+
+#asal img:hover{
+
+    transform:scale(1.03);
+
+}
+
+#asal h2{
+
+    color:#1b5e20;
+
+}
+
+#asal ul{
+
+    padding-left:20px;
+
+}
+
+#asal li{
+
+    margin-bottom:12px;
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+/* ===============================
+   PENYEBARAN
+================================ */
+
+#penyebaran{
+
+    background:#f8faf9;
+
+}
+
+#penyebaran .card{
+
+    text-align:center;
+
+}
+
+#penyebaran i{
+
+    font-size:55px;
+
+    color:#198754;
+
+    margin-bottom:20px;
+
+    transition:.4s;
+
+}
+
+#penyebaran .card:hover i{
+
+    transform:rotate(10deg);
+
+    color:#ffc107;
+
+}
+
+/* ===============================
+   INDONESIA
+================================ */
+
+#indonesia{
+
+    background:#ffffff;
+
+}
+
+#indonesia img{
+
+    border-radius:20px;
+
+    transition:.4s;
+
+}
+
+#indonesia img:hover{
+
+    transform:scale(1.03);
+
+}
+
+#indonesia p{
+
+    text-align:justify;
+
+}
+
+/* ===============================
+   MANFAAT
+================================ */
+
+#manfaat{
+
+    background:#f8faf9;
+
+}
+
+#manfaat .card{
+
+    text-align:center;
+
+    cursor:pointer;
+
+}
+
+#manfaat .card-body{
+
+    padding:40px 30px;
+
+}
+
+#manfaat i{
+
+    font-size:60px;
+
+    color:#198754;
+
+    margin-bottom:20px;
+
+    transition:.4s;
+
+}
+
+#manfaat h5{
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+#manfaat .card:hover{
+
+    background:#198754;
+
+}
+
+#manfaat .card:hover i{
+
+    color:#ffc107;
+
+    transform:scale(1.15);
+
+}
+
+#manfaat .card:hover h5{
+
+    color:white;
+
+}
+
+#manfaat .card:hover p{
+
+    color:white;
+
+}
+
+/* ===============================
+   STATISTIK
+================================ */
+
+#statistik{
+
+    color:white;
+
+}
+
+#statistik h1{
+
+    font-size:60px;
+
+    font-weight:800;
+
+    margin-bottom:10px;
+
+}
+
+#statistik p{
+
+    color:#ffffff;
+
+    font-size:18px;
+
+}
+
+#statistik .col-md-3{
+
+    transition:.3s;
+
+}
+
+#statistik .col-md-3:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* ===============================
+   GARIS JUDUL
+================================ */
+
+section h2{
+
+    position:relative;
+
+    display:inline-block;
+
+}
+
+section h2::after{
+
+    content:"";
+
+    width:80px;
+
+    height:4px;
+
+    background:#ffc107;
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-12px;
+
+    transform:translateX(-50%);
+
+    border-radius:20px;
+
+}
+
+/* ===============================
+   ANIMASI MASUK
+================================ */
+
+.fade-up{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}/* =====================================================
+   STYLE.CSS - PART 2C (FINAL)
+   BUDIDAYA - KEMITRAAN - GALERI - CTA - FOOTER
+=====================================================*/
+
+/* ===============================
+   BUDIDAYA
+================================ */
+
+#budidaya{
+    background:#ffffff;
+}
+
+#budidaya .card{
+    text-align:center;
+    border-radius:20px;
+    transition:.35s;
+}
+
+#budidaya .card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 35px rgba(0,0,0,.15);
+}
+
+#budidaya .display-4{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+#budidaya h5{
+    color:#198754;
+    font-weight:700;
+}
+
+#budidaya p{
+    color:#666;
+}
+
+/* ===============================
+   PROGRAM KEMITRAAN
+================================ */
+
+#kemitraan{
+    background:#f8faf9;
+}
+
+#kemitraan img{
+    border-radius:20px;
+    transition:.4s;
+}
+
+#kemitraan img:hover{
+    transform:scale(1.03);
+}
+
+#kemitraan ul{
+    padding-left:0;
+}
+
+#kemitraan li{
+    margin-bottom:15px;
+    color:#555;
+    transition:.3s;
+}
+
+#kemitraan li:hover{
+    transform:translateX(8px);
+    color:#198754;
+}
+
+/* ===============================
+   GALERI
+================================ */
+
+#galeri{
+    background:#ffffff;
+}
+
+#galeri .gallery-item{
+    overflow:hidden;
+    border-radius:18px;
+}
+
+#galeri img{
+
+    width:100%;
+
+    aspect-ratio:1/1;
+
+    object-fit:cover;
+
+    transition:.4s;
+
+}
+
+#galeri img:hover{
+
+    transform:scale(1.08);
+
+}
+
+#galeri .gallery-item:hover{
+
+    box-shadow:0 18px 35px rgba(0,0,0,.18);
+
+}
+
+/* ===============================
+   CALL TO ACTION
+================================ */
+
+#cta{
+
+    background:linear-gradient(
+        135deg,
+        #198754,
+        #2e7d32
+    );
+
+    color:white;
+
+    text-align:center;
+
+}
+
+#cta h2{
+
+    color:white;
+
+    font-size:42px;
+
+}
+
+#cta p{
+
+    color:#f4f4f4;
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-bottom:35px;
+
+}
+
+#cta .btn{
+
+    padding:15px 40px;
+
+}
+
+/* ===============================
+   KONTAK
+================================ */
+
+#kontak{
+
+    background:#ffffff;
+
+}
+
+#kontak .card{
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+#kontak i{
+
+    font-size:55px;
+
+    color:#198754;
+
+    margin-bottom:20px;
+
+    transition:.3s;
+
+}
+
+#kontak .card:hover i{
+
+    color:#ffc107;
+
+    transform:scale(1.15);
+
+}
+
+#kontak h5{
+
+    font-weight:700;
+
+}
+
+#kontak p{
+
+    color:#666;
+
+}
+
+/* ===============================
+   FOOTER
+================================ */
+
+footer{
+
+    background:#111;
+
+    color:white;
+
+    padding:70px 0 20px;
+
+}
+
+footer h3{
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+footer h5{
+
+    margin-bottom:20px;
+
+    color:#ffc107;
+
+}
+
+footer p{
+
+    color:#cfcfcf;
+
+}
+
+footer a{
+
+    color:#cfcfcf;
+
+    transition:.3s;
+
+}
+
+footer a:hover{
+
+    color:#ffc107;
+
+    padding-left:6px;
+
+}
+
+footer hr{
+
+    border-color:rgba(255,255,255,.15);
+
+}
+
+footer .copyright{
+
+    text-align:center;
+
+    margin-top:25px;
+
+    color:#aaaaaa;
+
+    font-size:15px;
+
+}
+
+/* ===============================
+   FLOATING WHATSAPP
+================================ */
+
+.floating-wa{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+    z-index:999;
+
+    transition:.3s;
+
+    animation:waPulse 2s infinite;
+
+}
+
+.floating-wa:hover{
+
+    transform:scale(1.1);
+
+    color:white;
+
+}
+
+@keyframes waPulse{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.12);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+/* ===============================
+   SCROLLBAR
+================================ */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#ececec;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#198754;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#146c43;
+
+}
+
+/* ===============================
+   TEXT SELECTION
+================================ */
+
+::selection{
+
+    background:#198754;
+
+    color:white;
+
+}
+/* =====================================================
+   STYLE.CSS - PART 2D (FINAL)
+   RESPONSIVE & ANIMATION
+=====================================================*/
+
+/* ===============================
+   ANIMATION
+================================ */
+
+.fade-in{
+    animation:fadeIn .8s ease forwards;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.zoom-in{
+    animation:zoomIn .8s ease;
+}
+
+@keyframes zoomIn{
+    from{
+        opacity:0;
+        transform:scale(.9);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+/* ===============================
+   SMOOTH HOVER
+================================ */
+
+.card,
+img,
+.btn,
+.nav-link{
+    transition:all .3s ease;
+}
+
+/* ===============================
+   DESKTOP
+================================ */
+
+@media (min-width:1200px){
+
+.hero{
+    min-height:100vh;
+}
+
+.hero h1{
+    max-width:650px;
+}
+
+.hero p{
+    max-width:600px;
+}
+
+}
+
+/* ===============================
+   LAPTOP
+================================ */
+
+@media (max-width:1199px){
+
+.hero{
+    padding-top:120px;
+    padding-bottom:80px;
+}
+
+.hero h1{
+    font-size:3.5rem;
+}
+
+.section-title h2{
+    font-size:38px;
+}
+
+}
+
+/* ===============================
+   TABLET
+================================ */
+
+@media (max-width:991px){
+
+section{
+    padding:80px 0;
+}
+
+.hero{
+    text-align:center;
+}
+
+.hero img{
+    margin-top:40px;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero p{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.navbar-nav{
+    text-align:center;
+    padding-top:20px;
+}
+
+.nav-link{
+    margin:10px 0;
+}
+
+.section-title h2{
+    font-size:34px;
+}
+
+.card{
+    margin-bottom:25px;
+}
+
+footer{
+    text-align:center;
+}
+
+footer .row>div{
+    margin-bottom:30px;
+}
+
+}
+
+/* ===============================
+   MOBILE
+================================ */
+
+@media (max-width:768px){
+
+body{
+    font-size:15px;
+}
+
+.hero{
+    min-height:auto;
+    padding:130px 0 70px;
+}
+
+.hero h1{
+    font-size:2.4rem;
+}
+
+.hero p{
+    font-size:1rem;
+}
+
+.hero .btn{
+    display:block;
+    width:100%;
+    margin-bottom:15px;
+}
+
+section{
+    padding:70px 0;
+}
+
+.section-title{
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    font-size:30px;
+}
+
+.container{
+    padding-left:20px;
+    padding-right:20px;
+}
+
+#galeri img{
+    height:auto;
+}
+
+#statistik h1{
+    font-size:40px;
+}
+
+.display-4{
+    font-size:45px !important;
+}
+
+.floating-wa{
+    width:55px;
+    height:55px;
+    font-size:28px;
+    right:18px;
+    bottom:18px;
+}
+
+}
+
+/* ===============================
+   SMALL MOBILE
+================================ */
+
+@media (max-width:576px){
+
+.hero h1{
+    font-size:2rem;
+}
+
+.hero p{
+    font-size:.95rem;
+}
+
+.section-title h2{
+    font-size:26px;
+}
+
+.card-body{
+    padding:25px;
+}
+
+.btn{
+    padding:12px 25px;
+}
+
+footer{
+    padding:50px 0 20px;
+}
+
+}
+
+/* ===============================
+   EXTRA SMALL
+================================ */
+
+@media (max-width:360px){
+
+.hero h1{
+    font-size:1.7rem;
+}
+
+.hero p{
+    font-size:.9rem;
+}
+
+.navbar-brand{
+    font-size:22px;
+}
+
+.section-title h2{
+    font-size:24px;
+}
+
+}
+
+/* ===============================
+   PRINT
+================================ */
+
+@media print{
+
+.navbar,
+.floating-wa,
+.btn,
+footer{
+    display:none;
+}
+
+body{
+    background:white;
+}
+
+}
+
+/* ===============================
+   ACCESSIBILITY
+================================ */
+
+:focus-visible{
+    outline:3px solid #ffc107;
+    outline-offset:3px;
+}
+
+/* ===============================
+   PERFORMANCE
+================================ */
+
+img{
+    image-rendering:auto;
+}
+/* ================= GALERI RESPONSIVE ================= */
+
+#galeri img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    transition:.3s;
+}
+
+#galeri img:hover{
+    transform:scale(1.05);
+}
+
+/* HP */
+
+@media (max-width:768px){
+
+    #galeri .row{
+        flex-wrap:nowrap;
+        overflow-x:auto;
+        gap:15px;
+        padding-bottom:10px;
+
+        /* supaya bisa di-swipe */
+        scroll-snap-type:x mandatory;
+        -webkit-overflow-scrolling:touch;
+    }
+
+    #galeri .col-lg-3,
+    #galeri .col-md-6{
+        min-width:85%;
+        flex:0 0 auto;
+        scroll-snap-align:center;
+    }
+
+    #galeri .row::-webkit-scrollbar{
+        display:none;
+    }
+
+}
+.foto-profil{
+    width:100px;
+    height:120px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid #198754;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+    margin-bottom:15px;
+}
